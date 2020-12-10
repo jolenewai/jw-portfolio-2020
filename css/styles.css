@@ -1,0 +1,48 @@
+html, body {
+    background-color: #EFF7F6;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1rem;
+}
+
+.navbar {
+    width: 1280px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 1.125rem;
+}
+
+.navlinks {
+    display: inline;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.navlinks a {
+    display: inline-block;
+    margin: 0 2rem;
+    padding: 0;
+}
+
+.brand {
+    height: 82px;
+    width: 82px;
+}
+
+.social-links {
+    padding: 1.5rem;
+}
+
+.social-links a {
+    width: 24px;
+    height: 24px;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    display: inline;
+}
+
+.main-banner {
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,84 @@
+.preloader {
+    width: 100%; 
+    height: 100vh;
+    background-color: #EFF7F6;
+    transition: ease-in-out;
+    top: 0;
+}
+
+#logo {
+    position: absolute;
+    width:200px;
+    height: 200px;
+    top:50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: rotate(-90deg) translate(50%,-50%);
+    animation: logo-rotation 1s ease-in-out forwards;
+    animation-delay: 5s;
+}
+
+.letters-path{
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 4000;
+    stroke-width: 3;
+    animation: letter-animation 8s ease-in-out forwards;
+    animation-delay: .5s;
+}
+
+.circle-path {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+    stroke-width: 5;
+    animation: circle-animation 3s ease-in-out forwards;
+    animation-delay: 5.3s;
+}
+
+.dot-path {
+    fill: #231F20;
+    fill-opacity: 0;
+    animation: dot-animation .5s ease-out forwards;
+    animation-delay: 2.8s;
+}
+
+@keyframes letter-animation {
+    0% {
+        stroke-dashoffset: 4000;
+    }
+    
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes circle-animation {
+    0% {
+        stroke-dashoffset: 2600;
+    }
+    
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dot-animation {
+    0% {
+        fill-opacity: 0;
+    }
+    50% {
+        fill-opacity: 100;
+    }
+    100% {
+        fill-opacity: 100;
+    }
+}
+
+@keyframes logo-rotation {
+    0% {
+    transform: rotate(-90deg) translate(50%,-50%); 
+    }
+    100% {
+    transform: rotate(0deg) translate(-50%,-50%); 
+    }
+}
+
