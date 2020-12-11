@@ -5,12 +5,14 @@ html, body {
 }
 
 .navbar {
-    width: 1280px;
+    max-width: 1160px;
+    width: 100%;
     padding: 35px;
     display: flex;
     justify-content: space-between;
     align-content: center;
     font-size: 1.125rem;
+    margin: 0 auto;
 }
 
 .navlinks {
@@ -20,10 +22,27 @@ html, body {
 }
 
 .navlinks a {
+    color: #000;
+    text-decoration: none;
     display: inline-block;
     margin: 0 2rem;
     padding: 0;
 }
+
+.navlinks a:after {
+    content: " ";
+    background: #7BDFF2;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    transition: width 0.3s ease-in;
+    -webkite-transition: width 0.3s ease-in;
+}
+
+.navlinks a:hover:after {
+    width: 80%;
+ }
 
 .brand {
     height: 82px;
