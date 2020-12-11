@@ -61,7 +61,10 @@ html, body {
     display: inline;
 }
 
-.main-banner {
-    width: 100%;
-    height: 100vh;
+.main-background {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
 }
+
+
