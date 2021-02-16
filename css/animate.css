@@ -4,6 +4,8 @@
     background-color: #EFF7F6;
     transition: ease-in-out;
     top: 0;
+    z-index: 100;
+    position:absolute;
 }
 
 #logo {
